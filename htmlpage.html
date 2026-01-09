@@ -1,50 +1,191 @@
 <html>
-    <head>
-        <title>HTML Practice Page</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <h1 id="main-heading">
-            Welcome to HTML Practice
-        </h1>
-        <h3 style="color: red;">
-            Learn the Basics of HTML
-        </h3>
-        <p> HTML stands for <b>HyperText Markup Language</b> and its used to build <strong>web pages</strong>.<br>
+<head>
+    <title>HTML Practice Page</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff5f8;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #main-heading {
+            text-align: center;
+            font-size: 47px;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+            color: rgb(220, 24, 56);
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        #main-heading:hover {
+            cursor: pointer;
+            color: rgb(88, 88, 175);
+        }
+
+        #subheading {
+            text-align: center;
+            color: rgb(222, 132, 147);
+            letter-spacing: 2px;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .important-info {
+            border: 4px solid rgb(140,12,34);
+            background-color: rgb(205, 130, 143);
+            transform: rotate(-2deg);
+            padding: 15px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .fancy-line {
+            width: 120px;
+            height: 4px;
+            border-radius: 10px;
+            background-color: rgb(140, 12, 34);
+            border: none;
+            margin: 20px auto;
+        }
+
+        .hacker {
+            background-color: rgb(33, 30, 30);
+            color: rgb(51, 230, 51);
+            font-family: monospace;
+            box-shadow: 0 0 10px rgb(83, 252, 83);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 15px;
+            width: 280px;
+            background-color: #f7e7ec;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+        .features li {
+            padding: 8px 0;
+            font-size: 16px;
+            color: rgb(97, 11, 25);
+        }
+
+        #steps {
+            list-style-type: upper-roman;
+            padding-left: 40px;
+            font-weight: bold;
+            line-height: 2;
+            color: rgb(94, 6, 21);
+            margin-bottom: 20px;
+        }
+        #steps li {
+            padding: 8px 0;
+            font-size: 16px;
+            color: rgb(156, 18, 18);
+        }
+
+        .external-link {
+            color: rgb(106, 99, 99);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .external-link:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(128,128,128,0.3);
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        .accent {
+            color: blue;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        #submit-btn {
+            background-color: orange;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 30px auto;
+        }
+        #submit-btn:hover {
+            background-color: darkorange;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: scale(1.05);
+        }
+
+        .page-footer {
+            font-size: 12px;
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">Welcome to HTML Practice</h1>
+    <h3 id="subheading">Learn the Basics of HTML</h3>
+
+    <p class="important-info">
+        HTML stands for <b>HyperText Markup Language</b> and its used to build <strong>web pages</strong>.<br>
         It allows you to structure content <i>effectively</i> and style text <em>properly</em>.<br>
-        Practicing HTML is fun for <b>web development</b>.</p>
-        </h3>
-    <hr style = "border: 2px solid pink;">
-    <pre style="color: green;">
-    It preserves      spaces and
-    line breaks exactly as written.
+        Practicing HTML is fun for <b>web development</b>.
+    </p>
+
+    <hr class="fancy-line">
+
+    <pre class="hacker">
+	it preserves      spaces and
+	line breaks exactly as written.
     </pre>
+
     <ul class="features">
         <li>Easy to learn</li>
         <li>Widely used</li>
         <li>Foundational for web development</li>
     </ul>
+
     <ol id="steps">
         <li>Easy to learn</li>
         <li>Widely used</li>
         <li>Foundational for web development</li>
     </ol>
-    <a href="https://www.w3schools.com" class="external-link" style="color: red; " target="_blank">
+
+    <a href="https://www.w3schools.com" class="external-link" target="_blank">
         Visit W3Schools
     </a>
-    <div>
-        This is a <span style="color: blue; font-weight: bold;">special</span> sentence inside a div.
+
+    <div class="card">
+        This is a <span class="accent">special</span> sentence inside a div.
     </div>
-    <button id="submit-btn" style="
-    background-color: orange; 
-    color: white;">
-        Submit
-    </button>
-    <footer class="page-footer" style="
-    font-size: 12px; 
-    margin-top: 20px;">
+
+    <button id="submit-btn">Submit</button>
+
+    <footer class="page-footer">
         &copy; 2026 HTML Practice Page. All rights reserved.
     </footer>
-    
-    </body>
+
+</body>
 </html>
