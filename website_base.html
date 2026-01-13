@@ -1,0 +1,211 @@
+<html>
+<head>
+    <title>Student Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bbcee3;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2f5d8a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .content {
+            flex: 3;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 6px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #e6eef7;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #2f5d8a;
+        }
+
+        th {
+            background-color: #659bd2;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #2f5d8a;
+        }
+
+        form button {
+            padding: 10px 15px;
+            background-color: #2f5d8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hazel's Portfolio</h1>
+        <p>Aspiring Web Developer & Student</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+
+    <div class="container">
+
+        <div class="content">
+            <h2>About Me</h2>
+
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQFyZM3KA7t4Tg/profile-displayphoto-crop_800_800/B56Zso6LkuHAAI-/0/1765917900464?e=1769644800&v=beta&t=zBosZcf7_bE1sqPR9JA8C3BMZNCqR2-Zj0zrRQxDz7A" alt="Profile picture">
+
+            <p>
+                Hi! I am a student learning web development and interested in AI/ML.
+                I enjoy building simple and structured websites using HTML, CSS, and JavaScript.
+                This portfolio represents my learning progress.
+            </p>
+
+            <h2>My Skills</h2>
+
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Learning</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Learning</td>
+                </tr>
+                <tr>
+                    <td>MySQL</td>
+                    <td>Learning</td>
+                </tr>
+            </table>
+
+            <h2>Contact Me</h2>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Message:</label>
+                <textarea rows="4" placeholder="Your message"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="sidebar">
+            <h3>Quick Info</h3>
+            <p>
+                Student <br>
+                Learning Web Development
+				Interested in AI/ML. <br>
+            </p>
+			<p>
+				<strong>LinkedIn:</strong><br>
+				<a href="https://www.linkedin.com/in/hazel-lakshmana-21b566379/" target="_blank">
+					linkedin.com/in/hazel-lakshmana
+				</a>
+			</p>
+
+   			 <p>
+				<strong>GitHub:</strong><br>
+				<a href="https://github.com/hazelnutbytes" target="_blank">
+					github.com/hazelnutbytes
+				</a>
+			</p>
+		
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
