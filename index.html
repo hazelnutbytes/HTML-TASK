@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Semantic HTML5 webpage demonstrating structure, accessibility, SEO, and multimedia usage.">
+    <meta name="keywords" content="HTML5, Semantic Tags, Audio, Video, Web Development">
+    <meta name="author" content="Student">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic and Multimedia Webpage Using HTML5</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2f5d8a;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #e8eef5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1f3a5f;
+        }
+
+        footer {
+            background-color: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        audio, video {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Semantic and Multimedia Webpage Using HTML5</h1>
+    <p>Learning HTML5 structure, accessibility, and multimedia</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#audio">Audio</a>
+    <a href="#video">Video</a>
+    <a href="#resources">Resources</a>
+</nav>
+
+<main>
+
+    <section>
+        <article id="about">
+            <h2>About This Website</h2>
+            <p>
+                This webpage is created as part of an HTML practical assignment.
+                It demonstrates the proper use of HTML5 semantic elements, clean
+                document structure, and the integration of multimedia content.
+            </p>
+        </article>
+
+        <article id="audio">
+            <h2>Audio Example</h2>
+            <p>This is an example of an embedded audio file using the HTML5 audio tag.</p>
+
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                <track src="audio-captions.vtt" kind="captions" srclang="en" label="English" default>
+                Your browser does not support the audio element.
+            </audio>
+        </article>
+
+        <article id="video">
+            <h2>Video Example</h2>
+            <p>This section demonstrates a video with controls and captions.</p>
+
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                <track src="video-captions.vtt" kind="captions" srclang="en" label="English" default>
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+
+    <aside id="resources">
+        <h2>Useful Resources</h2>
+        <ul>
+            <li>
+                <a href="https://www.geeksforgeeks.org/css/top-10-projects-for-beginners-to-practice-html-and-css-skills/"
+                   target="_blank">
+                    HTML & CSS Practice Projects
+                </a>
+            </li>
+            <li>HTML5 Semantic Elements</li>
+            <li>Web Accessibility Basics</li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 | HTML5 Practical Assignment</p>
+</footer>
+
+</body>
+</html>
